@@ -35,8 +35,6 @@ ChatBot::~ChatBot() {
     if (_image != NULL) {
         delete _image;
         _image = NULL;
-        _chatLogic = nullptr;
-        _rootNode = nullptr;
     }
 }
 
@@ -48,6 +46,8 @@ ChatBot::ChatBot(const ChatBot &source) {
     _chatLogic = source._chatLogic;
     _rootNode = source._rootNode;
     _currentNode = source._currentNode;
+
+    _chatLogic->SetChatbotHandle(this);
 }
 
 ChatBot &ChatBot::operator=(const ChatBot &source) {
@@ -60,6 +60,8 @@ ChatBot &ChatBot::operator=(const ChatBot &source) {
         _chatLogic = source._chatLogic;
         _rootNode = source._rootNode;
         _currentNode = source._currentNode;
+
+        _chatLogic->SetChatbotHandle(this);
     }
 
     return *this;
@@ -73,30 +75,28 @@ ChatBot::ChatBot(ChatBot &&source) {
     _rootNode = source._rootNode;
     _currentNode = source._currentNode;
 
-    _chatLogic->ChatLogic::SetChatbotHandle(this);
-
     source._image = NULL;
     source._currentNode = nullptr;
     source._rootNode = nullptr;
     source._chatLogic = nullptr;
+
+    _chatLogic->SetChatbotHandle(this);
 }
 
 ChatBot &ChatBot::operator=(ChatBot &&source) {
     std::cout << "ChatBot Move Assignment Operator" << "\n";
     
     if (this != &source) {
-        delete _image;
-        _image = new wxBitmap();
         _image = source._image;
         _chatLogic = source._chatLogic;
         _rootNode = source._rootNode;
-
-        _chatLogic->ChatLogic::SetChatbotHandle(this);
 
         source._image = NULL;
         source._currentNode = nullptr;
         source._rootNode = nullptr;
         source._chatLogic = nullptr;
+
+        _chatLogic->SetChatbotHandle(this);
     }
 
     return *this;
