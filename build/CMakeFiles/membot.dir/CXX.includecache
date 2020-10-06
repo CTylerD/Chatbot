@@ -6,46 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/Users/Tyla/desktop/Programming/Udacity/4C++/CppND-Memory-Management-Chatbot/src/chatbot.cpp
-iostream
--
-random
--
-algorithm
--
-ctime
--
-chatlogic.h
-/Users/Tyla/desktop/Programming/Udacity/4C++/CppND-Memory-Management-Chatbot/src/chatlogic.h
-graphnode.h
-/Users/Tyla/desktop/Programming/Udacity/4C++/CppND-Memory-Management-Chatbot/src/graphnode.h
-graphedge.h
-/Users/Tyla/desktop/Programming/Udacity/4C++/CppND-Memory-Management-Chatbot/src/graphedge.h
-chatbot.h
-/Users/Tyla/desktop/Programming/Udacity/4C++/CppND-Memory-Management-Chatbot/src/chatbot.h
-
 /Users/Tyla/desktop/Programming/Udacity/4C++/CppND-Memory-Management-Chatbot/src/chatbot.h
 wx/bitmap.h
 -
 string
--
-
-/Users/Tyla/desktop/Programming/Udacity/4C++/CppND-Memory-Management-Chatbot/src/chatgui.cpp
-wx/filename.h
--
-wx/colour.h
--
-wx/image.h
--
-string
--
-chatbot.h
-/Users/Tyla/desktop/Programming/Udacity/4C++/CppND-Memory-Management-Chatbot/src/chatbot.h
-chatlogic.h
-/Users/Tyla/desktop/Programming/Udacity/4C++/CppND-Memory-Management-Chatbot/src/chatlogic.h
-chatgui.h
-/Users/Tyla/desktop/Programming/Udacity/4C++/CppND-Memory-Management-Chatbot/src/chatgui.h
-memory
 -
 
 /Users/Tyla/desktop/Programming/Udacity/4C++/CppND-Memory-Management-Chatbot/src/chatgui.h
@@ -69,6 +33,8 @@ tuple
 -
 algorithm
 -
+memory
+-
 graphedge.h
 /Users/Tyla/desktop/Programming/Udacity/4C++/CppND-Memory-Management-Chatbot/src/graphedge.h
 graphnode.h
@@ -85,6 +51,8 @@ string
 -
 chatgui.h
 /Users/Tyla/desktop/Programming/Udacity/4C++/CppND-Memory-Management-Chatbot/src/chatgui.h
+memory
+-
 
 /Users/Tyla/desktop/Programming/Udacity/4C++/CppND-Memory-Management-Chatbot/src/graphedge.h
 vector
