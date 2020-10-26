@@ -1,4 +1,4 @@
-# CPPND: Memory Management Chatbot
+# Memory Management Chatbot
 
 ## Udacity C++ Nanodegree - Project #3
 
