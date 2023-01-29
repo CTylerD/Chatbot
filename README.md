@@ -1,7 +1,5 @@
 # Memory Management Chatbot
 
-## Udacity C++ Nanodegree - Project #3
-
 <img src="images/chatbot_demo.gif"/>
 
 Project Prompt:
@@ -38,7 +36,6 @@ Project Prompt:
 ## Contributing Authors
 
 C. Tyler Dennis  
-Udacity
 
 ## Licensing
 
